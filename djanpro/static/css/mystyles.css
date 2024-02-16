@@ -1,8 +1,8 @@
 
 
-/* body {
+body {
     height: 1500px;
-} */
+}
 
 .navbar {
     background-color: black;
@@ -45,6 +45,7 @@ li > .nav-link {
 
 #info > .list-group{
     text-align: left;
+    text-transform:capitalize;
 }
 
 .row .fixed-bottom {

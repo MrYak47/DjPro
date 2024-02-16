@@ -13,9 +13,17 @@ def subquery (request):
         mydic = {
             "q": q,
             "ans" : ans,
-            "error" : False
+            "error" : False,
+            "result": True
+            
         }
         return render(request, 'index.html', context = mydic)
-    except:
-        pass
+    except :
+        
+        mydic ={
+            "error": True,
+            "result": False
+            
+        }
+        return render(request, 'index.html', context=mydic)
     
