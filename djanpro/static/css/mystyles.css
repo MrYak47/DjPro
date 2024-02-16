@@ -1,0 +1,58 @@
+
+
+/* body {
+    height: 1500px;
+} */
+
+.navbar {
+    background-color: black;
+}
+
+.container-fluid .img-fluid {
+    width: 80px;
+    height: 80px;
+    position: relative;
+}
+
+.container-fluid > a{
+    margin: 1rem;
+    color: white;
+}
+
+
+
+li > .nav-link {
+    color: white;
+}
+
+
+
+.card {
+    background-color: black;
+}
+
+.card-body .btn {
+    margin: 1rem 1rem 0 auto;
+    float: right;
+    
+}
+
+#info{
+    margin: 0 auto;
+    font-family: 'Hanken Grotesk', sans-serif;
+    text-align: center;
+}
+
+#info > .list-group{
+    text-align: left;
+}
+
+.row .fixed-bottom {
+    background-color: black;
+    position: relative;
+}
+
+.fixed-bottom > p {
+    color: white;
+    text-align: center;
+}

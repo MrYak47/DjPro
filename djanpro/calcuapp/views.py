@@ -4,4 +4,18 @@ from django.http import HttpResponse
 # Create your views here.
 
 def index(request):
-    return HttpResponse("server started")
+    return render(request, 'index.html')
+
+def subquery (request):
+    q= request.GET['query']
+    try:
+        ans = eval(q)
+        mydic = {
+            "q": q,
+            "ans" : ans,
+            "error" : False
+        }
+        return render(request, 'index.html', context = mydic)
+    except:
+        pass
+    
